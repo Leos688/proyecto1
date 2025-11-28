@@ -1,217 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Website1</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Login con Clave Estática</title>
+    <link rel="stylesheet" href="login.css" />
   </head>
-
   <body>
-    <nav class="topheader">
-      <a href=""class="logo">
-        <img
-          width="60"
-          height="30"
-          src="imagenes/Coca-Cola_logo.svg.png"
-          alt=""
-        />
-      </a>
-      <ul class="menu-horizontal">
-        <li><a href="">Productos</a></li>
-        <li>
-          <a href="">Promociones</a>
-          <ul class="menu-vertical">
-            <li><a href="">Tarjetas Credito</a></li>
-            <li><a href="">Tarjetas Debito</a></li>
-            <li><a href="">Beneficios viaje</a></li>
-            <li><a href="">Plin</a></li>
-          </ul>
-        </li>
-        <li><a href="">Zona digital</a></li>
-        <li><a href="#contactanos">Contactanos</a></li>
-      </ul>
-    </nav>
-  <!--seccion productos-->
-    <section class = "seccion-productos">
-      <div class="div-gral-productos">
-        <div class="div-prod-texto">
-          <h2>Nuestros servicios</h2>
-          <p>En, creamos estrategias de publicidad
-            digital a medida. Nos enfocamos en conectar tu marca con tu
-            audiencia ideal a través de SEO, SEM, y campañas de redes
-            sociales que realmente convierten.
-          </p>
-          <p>Nuestro equipo de expertos analiza tu mercado y diseña campañas
-            optimizadas para maximizar tu retorno de inversión (ROI).
-          </p>
-          <button>Conoce más</button>
-          </div>
-        <div class="div-prod-img">
-          <img src="imagenes/b2ap3_amp_productos-en-carrito-de-compra.jpg"/>
-        </div>
-    </section>
-    <!--seccion zona digital-->
-    <section class = "seccion-zondig">
-      <div class="div-gral-zondig">
-        <div class="div-zondig-texto">
-          <h2>Casos de Éxito</h2>
-          <p>Ayudamos a la Empresa a triplicar su generación de leads
-            en 6 meses. La Marca vio un aumento del 200% en su
-            tráfico orgánico gracias a nuestra estrategia SEO.
-          </p>
-          <p>No solo traemos tráfico, traemos clientes. Revisa nuestros
-            proyectos y descubre lo que podemos hacer por ti.
-          </p>
-          <button>Ver proyectos</button>
-        </div>
-        <div class="div-zondig-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/LlG-5q7VSQI?si=8pGL1x_0gH0oyiW5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-          clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen></iframe>
-      </div>
-    </section>
+    <section class="login-container">
+      <div class="login-box">
+        <h2>Acceso Restringido</h2>
 
-    <!--seccion finanzas-->
-    <section class = "seccion-finanzas">
-      <div class="div-gral-finanzas">
-        <div class="div-finanzas-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/LlG-5q7VSQI?si=8pGL1x_0gH0oyiW5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-          clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen></iframe>
-      </div>
-        <div class="div-finanzas-texto">
-          <h2>Nuestro proceso</h2>
-          <p>Las habilidades una persona mediante la experiencia personal, social y profesional. Son habilidades personales que nos permiten interactuar de manera efectiva con los demás y gestionar nuestras emociones.
-          </p>
-          <button>Mas info</button>
-        </div>
-    </section>
-
-    <!--seccion Contactanoss-->
-    <section class = "seccion-contactanos">
-      <div class="div-gral-contactanos">
-        <div class="div-contactanos-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/LlG-5q7VSQI?si=8pGL1x_0gH0oyiW5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-          clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen></iframe>
-      </div>
-        <div class="div-contactanos-texto">
-          <h2>Contactanos</h2>
-          <p>Las habilidades una persona mediante la experiencia personal, social y profesional. Son habilidades personales que nos permiten interactuar de manera efectiva con los demás y gestionar nuestras emociones.
-          </p>
-          <button>Mas info</button>
-        </div>
-    </section>
-
-    <section class="seccion-formulario"id="contactanos">
-      <div class="div-cont-formulario">
-        <h2>Formulario de contacto</h2>
-        <p>Complete todos los casilleros</p>
-        <form class="formulario">
-        <!--INPUT:TEXT-->
-        <div class="campo">
-          <label for= "nombre">Nombres completos:</label>
-            <input type="text"id="nombre"name="nombre"placeholder="ingrese nombres"/>
-          </div>
-        <!--LISTA DESPLEGABLE-->
-        <div class="campo">
-          <label for="nombres"Pais></label>
-          <select id="pais"name="pais">
-            <option value="">Seleccione un pais</option>
-            <option value="peru">Peru</option>
-            <option value="brasil">Brasil</option>
-            <option value="argentina">Argentina</option>
-            <option value="mexico">Mexico</option>
-          </select>
-        </div>
-        <!--CHECKBOX-->
-        <div class="campo">
-          <label>Intereses:</label>
-          <ul class="lista-checkbox">
-            <li><label><input type="checkbox"name="Intereses"value="a"/>Finanzas</label>
-            <li><label><input type="checkbox"name="Intereses"value="b"/>Comida</label>
-            <li><label><input type="checkbox"name="Intereses"value="c"/>Ambiente</label>
-            <li><label><input type="checkbox"name="Intereses"value="d"/>Tecnologia</label>
-          </ul>
-        </div>
-        <!--RADIOBUTTON-->
-        <div class="campo">
-          <label>Sexo:</label>
-          <ul class="lista-radio">
-            <li><label><input type="checkbox"name="Intereses"value="m"/>Masculino</label>
-            <li><label><input type="checkbox"name="Intereses"value="f"/>Femenino</label>
-          </ul>
-        </div>
-        <button type="submit">Enviar</button>
-       </form>
-      </div>
-    </section>
-
-      <!-- PIE DE PAGINA -->
-
-    <section id="footer">
-      <footer class="footer">
-        <div class="footer-container">
-          <!-- Logo y nombre de sitio -->
-          <!--fakta config-->
-          <div class="footer-brand">
-            <img
-              src="Imagenes/senati-logo.png"
-              alt="Logo"
-              class="footer-logo"
+        <form onsubmit="return validarLogin(event);">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Introduce tu email"
+              required
             />
-            <p>Leonardo Um</p>
-            <small>© 2025 Todos los derechos reservados</small>
           </div>
 
-          <!-- Enlaces legales -->
-          <div class="footer-links">
-            <h4>Legal</h4>
-            <a href="/Documentos/3.politica-privacidad.pdf"
-              >Política de Privacidad</a
-            >
-            <!-- Dentro de href llama a un documento pdf con la poltica-->
-            <a href="#">Términos y Condiciones</a>
-            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
-            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          <div class="input-group">
+            <label for="password">Clave de Acceso (ok)</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Introduce la clave secreta"
+              required
+            />
           </div>
 
-          <!-- Redes sociales con íconos personalizados -->
-          <div class="footer-social">
-            <h4>Síguenos</h4>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
-                alt="Facebook"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
-                alt="Instagram"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-                alt="LinkedIn"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
-                alt="Twitter"
-                class="social-icon"
-            /></a>
-          </div>
-        </div>
-      </footer>
+          <button type="submit" class="login-button">Iniciar Sesión</button>
+        </form>
+      </div>
     </section>
 
+    <script src="login.js"></script>
   </body>
 </html>

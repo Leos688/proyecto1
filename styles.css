@@ -9,14 +9,14 @@
   justify-content: space-between;
   padding: 0rem 1.25rem;
 }
-.menu-horizontal {
+.Menu-Horizontal {
   list-style: none;
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
-.menu-horizontal li a {
+.Menu-Horizontal li a {
   display: Block;
   padding: 0.938rem 1.25rem;
   color: white;
@@ -31,10 +31,10 @@
   width: 9.375rem;
 }
 
-.menu-horizontal li a:hover {
+.Menu-Horizontal li a:hover {
   color: orange;
 }
-.menu-horizontal li:hover .menu-vertical {
+.Menu-Horizontal li:hover .menu-vertical {
   display: block;
 }
 /*SECCION PRODUCTOS*/
