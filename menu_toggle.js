@@ -2,7 +2,7 @@
 const btn = document.querySelector(".menu-toggle");
 
 // Selecciona el menú horizontal
-const menu = document.querySelector(".menu-horizontal");
+const menu = document.querySelector(".Menu-Horizontal");
 
 // Al hacer clic en el botón de hamburguesa
 btn.addEventListener("click", () => {
